@@ -11,9 +11,9 @@
 
 header {
 
-    /* position: relative;
-    width: 100%; */
-    height: calc(100vh);
+    position: relative;
+    width: 100%;
+    height: 100vh;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -22,7 +22,17 @@ header {
     top: 0; */
 }
 
+.Background-mobile-vedio {
+
+    display: none;
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
 .background-video {
+    display: block;
     height: 100%;
     width: 100%;
     position: absolute;
@@ -41,6 +51,8 @@ nav {
 .logo {
     height: 100%;
     width: 30%;
+    position: relative;
+    left: 50px;
     /* border: 2px solid red; */
     display: flex;
     align-items: center;
@@ -51,6 +63,7 @@ nav {
 }
 
 .header-links {
+    display: block;
     height: 100%;
     width: 70%;
     /* border: 2px solid red; */
@@ -80,6 +93,15 @@ nav {
         }
 
     }
+}
+
+#menu {
+    display: none;
+    /* border: 2px solid red; */
+    margin-left: auto;
+    position: relative;
+    right: 40px;
+
 }
 
 .homepage {
@@ -580,7 +602,6 @@ nav {
 .review-1 {
 
     /* border: 2px solid red; */
-    
     padding: 2rem;
     border-radius: 90px;
     background-color: #FFFFFF;
@@ -594,6 +615,7 @@ nav {
 .review-2 {
 
     /* border: 2px solid red; */
+    display: block;
     padding: 2rem;
     margin-left: 15px;
     border-radius: 90px;
@@ -1296,6 +1318,7 @@ nav {
 
     .C-logos {
         display: flex;
+        flex-wrap: wrap;
         gap: 10px;
     }
 
@@ -1305,6 +1328,8 @@ nav {
 
     .socials {
         display: flex;
+        position: relative;
+        right: 20px;
         /* justify-content: center; */
         align-items: center;
         gap: 8px;
@@ -1337,9 +1362,12 @@ nav {
     }
 
     .whatsapp {
+        position: relative;
+        right: 8px;
         width: 100%;
         /* border: 2px solid red; */
         display: flex;
+        justify-content: start;
         align-items: baseline;
         margin: 20px 0px;
 
@@ -1349,6 +1377,7 @@ nav {
         width: 100%;
         /* border: 2px solid red; */
         margin: 20px 0px;
+        justify-content: left;
         display: flex;
         align-items: baseline;
 
@@ -1424,8 +1453,2137 @@ nav {
 
 }
 
-@media (max-width:1025px){
+@media only screen and (max-width: 319px) {
+    * {
+        display: none;
+    }
+}
 
+
+@media (min-width:1023px) and (max-width:1350px) {
+
+    nav {
+        height: auto;
+        padding: 10px;
+        width: 100%;
+        font-size: 10px;
+    }
+
+    .logo {
+
+        left: 90px;
+    }
+
+    .header-links a {
+
+        font-size: 14px;
+
+    }
+
+
+    /*============================ homepage-2 responsive from here ================================== */
+
+
+    .kiwi-neon {
+        width: 95%;
+        /* border: 2px solid red; */
+    }
+
+    .grid-2 {
+        gap: 40px;
+    }
+
+    .figures {
+        width: 80%;
+    }
+
+    /* ======================================== homepage-3 responsive from here =================================== */
+
+    .homepage-3 {
+
+
+        .grid-cards {
+            height: 40vh;
+            width: 100%;
+            grid-template-columns: 40px 500px 500px 40px;
+            grid-template-rows: 250px 250px;
+            overflow: hidden;
+
+
+        }
+
+        .review-1 {
+            padding: 1.5rem;
+        }
+
+        .review-2 {
+
+            padding: 1.5rem;
+        }
+
+
+        .arrow-1 h1 {
+
+            font-size: 20px;
+        }
+
+        .arrow-2 h1 {
+
+            font-size: 20px;
+        }
+
+
+        .frame-1 {
+
+            padding: 0px 20px;
+        }
+
+        .money {
+
+            padding: 10px 35px;
+        }
+
+        .text {
+            margin: 15px;
+            font-size: 16px;
+        }
+
+    }
+
+    /* ======================================== homepage-4 responsive from here =================================== */
+
+
+
+
+    .caraousal-cards {
+
+        grid-template-columns: 200px 200px 200px 200px 200px;
+
+    }
+
+
+    .scroll-button button {
+
+        padding: 15px 33px;
+
+    }
+
+
+
+    /* ======================================== footer responsive from here =================================== */
+
+
+
+
+    .footer-contents {
+        height: 75%;
+        width: 100%;
+        padding: 30px;
+        gap: 30px;
+    }
+
+    .info {
+
+        p {
+            font-size: 18px;
+        }
+
+        .apple-playstore {
+
+            margin-top: 20px;
+
+        }
+
+    }
+
+    .certifications {
+
+
+        h1 {
+            font-size: 22px;
+
+        }
+
+        h2 {
+            font-size: 22px;
+        }
+
+        .C-logos {
+            height: 30%;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+
+        .socials {
+            gap: 2px;
+        }
+
+    }
+
+    .contacts-us {
+
+        h1 {
+            font-size: 22px;
+        }
+
+        .address {
+            font-size: 1rem;
+            line-height: 1.6rem;
+        }
+
+    }
+
+    .company {
+
+        /* border: 2px solid red; */
+        position: static;
+
+
+        h1 {
+
+            font-size: 22px;
+
+        }
+
+    }
+
+    .company-links {
+
+        gap: 10px;
+        margin-top: 20px;
+
+        a {
+            font-size: 17px;
+        }
+    }
+
+    #footer-line {
+        width: 85%;
+        border: 0.5px solid white;
+    }
+
+    #copyright {
+        font-size: 17px;
+    }
+
+}
+
+@media (min-width:767px) and (max-width:1023px) {
+
+    nav .logo {
+        left: 20px;
+    }
+
+    .header-links {
+        display: none;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    /*============================ homepage  responsive from here ================================== */
+
+
+    .homepage {
+
+        height: 100vh;
+
+    }
+
+    .homepage-content {
+
+        height: 50%;
+        width: 70%;
+
+
+    }
+
+    /*============================ homepage-2 responsive from here ================================== */
+
+    .homepage-2 {
+
+        height: 270dvh;
+        width: 100%;
+        background-color: #F1FFC5;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .heading {
+
+        height: 40vh;
+        width: 100%;
+        /* border: 2px solid red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h2 {
+            font-size: 32px;
+            color: #182547;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 20px;
+            color: #182547;
+        }
+    }
+
+    .kiwi-neon {
+
+        height: 70vh;
+        width: 80%;
+
+        background-color: #A5FF08;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+
+    }
+
+    .navbar {
+        height: 25%;
+        width: 100%;
+        /* border: 2px solid red; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 60px;
+        font-size: 22px;
+    }
+
+    .nine-nine {
+
+        background-color: #C9FF6B;
+
+        border-radius: 20px;
+        padding: 12px 24px;
+
+        button {
+            background-color: #C9FF6B;
+            border: 0;
+            font-size: 20px;
+
+            font-weight: 600;
+
+        }
+
+    }
+
+    .grids {
+
+        grid-template-columns: repeat(3, 170px);
+
+    }
+
+    .cashback {
+
+        img {
+            margin-top: 100px;
+        }
+
+
+    }
+
+    .airport {
+
+        img {
+            margin-top: 65px;
+        }
+    }
+
+    .offers {
+
+        img {
+            margin-top: 40px;
+        }
+
+    }
+
+    .grid-2 {
+        grid-template-columns: repeat(3, 190px);
+        gap: 40px;
+    }
+
+
+
+    .figures {
+        width: 90%;
+    }
+
+    .grid-3 {
+        grid-template-columns: repeat(3, 210px);
+        grid-template-rows: 130px;
+        gap: 15px;
+    }
+
+
+    /* ======================================== homepage-3 responsive from here =================================== */
+
+    .homepage-3 {
+
+
+        .grid-cards {
+            height: 40vh;
+            width: 100%;
+            grid-template-columns: 40px 300px 300px 40px;
+            grid-template-rows: 300px 300px;
+
+        }
+
+        .review-1 {
+            padding: 1rem;
+            border-radius: 40px;
+        }
+
+        .review-2 {
+            padding: 1rem;
+            margin-left: 10px;
+            border-radius: 40px;
+
+        }
+
+        .arrows {
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    }
+
+    .avatar {
+        height: 70px;
+        width: 70px;
+
+    }
+
+    .avatar-name {
+        margin: 30px;
+        font-size: 16px;
+        margin-bottom: 30px;
+        margin-left: 5px;
+    }
+
+    .money {
+
+        padding: 10px 15px;
+        border-radius: 20px;
+        margin-left: auto;
+
+        span {
+            font-size: 14px;
+        }
+    }
+
+    .text {
+        margin: 10px;
+        font-size: 15px;
+        line-height: 1.4rem;
+    }
+
+    .grid-4 {
+
+        height: 37vh;
+    }
+
+
+    /* ======================================== homepage-4 responsive from here =================================== */
+
+    .caraousal-cards {
+
+        grid-template-columns: 150px 150px 170px 150px 150px;
+
+    }
+
+
+    .scroll-button {
+
+        margin-top: 60px;
+
+        button {
+
+            padding: 15px 30px;
+
+        }
+    }
+
+
+    .homepage-4 {
+
+        h1 {
+
+            margin-top: 10px;
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 36px;
+            font-weight: 600;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #digitalfinance_card {
+            margin-top: 40px;
+        }
+
+        .BW-logo-2 {
+            height: 60%;
+            width: 80%;
+
+
+        }
+    }
+
+    /* ======================================== footer responsive from here =================================== */
+
+
+
+    .footer {
+        height: 60vh;
+
+    }
+
+    .footer-contents {
+        height: 75%;
+        width: 95%;
+        gap: 30px;
+    }
+
+    .info {
+
+        /* border: 2px solid red; */
+        height: 100%;
+        width: 20%;
+
+        p {
+            font-size: 16px;
+            margin-left: 30px;
+        }
+
+        .apple-playstore {
+            margin-top: 10px;
+            margin-left: 10px;
+
+            img {
+                margin: 0px 20px;
+            }
+        }
+
+    }
+
+    #w-logo {
+        margin: 25px;
+    }
+
+    .certifications {
+        h1 {
+            font-size: 20px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+
+        .C-logos {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+
+        .socials {
+            gap: 1px;
+        }
+
+
+    }
+
+    .contacts-us {
+
+        /* border: 2px solid red; */
+        height: 100%;
+        width: 25%;
+
+
+        h1 {
+            font-size: 20px;
+        }
+
+        .whatsapp {
+            margin: 0px 0px;
+        }
+
+        .location {
+            margin: 5px 0px;
+        }
+
+
+        .address {
+            font-size: 12px;
+            line-height: 1.3rem;
+
+        }
+
+    }
+
+    .company {
+        position: relative;
+        right: 20px;
+        height: 100%;
+        width: 25%;
+
+        h1 {
+            font-size: 20px;
+        }
+
+    }
+
+    .company-links {
+        margin-top: 20px;
+        grid-template-columns: 140px;
+        grid-template-rows: repeat(5, 20px);
+        gap: 25px;
+
+        a {
+            font-size: 11px;
+            padding: 0px;
+
+        }
+    }
+
+    #footer-line {
+        width: 80%;
+        border: 1px solid white;
+    }
+
+    #copyright {
+        font-size: 15px;
+        margin: 20px 0px 10px;
+    }
+
+
+
+
+}
+
+@media (min-width:425px) and (max-width:767px) {
+
+
+    .Background-mobile-vedio {
+
+        display: block;
+        position: absolute;
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+
+    }
+
+
+    .background-video {
+
+        display: none;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        object-fit: cover;
+        z-index: -2;
+    }
+
+    /* .Background-mobile-vedio{
+         display: none;
+         object-fit: cover;
+       
+    
+    } */
+
+
+    #menu {
+
+        display: block;
+    }
+
+    nav {
+        height: 7vh;
+        width: 100%;
+    }
+
+    .logo {
+        height: 100%;
+        width: 50%;
+    }
+
+    .header-links {
+        display: none;
+    }
+
+
+    /*============================ homepage  responsive from here ================================== */
+
+
+
+    .homepage-content {
+        width: 80%;
+
+
+        h1 {
+            font-size: 43px;
+        }
+
+        p {
+
+            font-size: 19px;
+            margin-top: 98px;
+        }
+
+        button {
+            padding: 15px 20px;
+            font-size: 18px;
+        }
+
+    }
+
+    .BW-logo {
+        height: 20%;
+        width: 100%;
+        gap: 10px;
+
+    }
+
+    .one {
+
+        height: 60%;
+        width: 20%;
+
+    }
+
+    .two {
+
+        height: 80%;
+        width: 40%;
+
+    }
+
+    .three {
+
+        height: 60%;
+        width: 20%;
+
+    }
+
+    .four {
+
+        height: 60%;
+        width: 20%;
+
+    }
+
+
+
+    /*============================ homepage-2 responsive from here ================================== */
+
+
+
+
+    .homepage-2 {
+        height: auto;
+    }
+
+    .heading {
+        h2 {
+            font-size: 28px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+
+    .kiwi-neon {
+
+        height: auto;
+        width: 90%;
+        /* border: 2px solid red; */
+        border-radius: 50px;
+        background-color: #A5FF08;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+
+    }
+
+    .navbar {
+        height: auto;
+        padding: 30px 30px;
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .nine-nine {
+        padding: 12px 14px;
+
+        button {
+            font-size: 16px;
+        }
+
+    }
+
+    .grids {
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 350px);
+        grid-template-rows: 280px 280px 280px;
+        row-gap: 60px;
+        padding: 30px 0px;
+
+
+    }
+
+    .cashback {
+
+        display: block;
+        overflow: hidden;
+
+        img {
+            margin-top: 0px;
+        }
+
+
+    }
+
+    .airport {
+
+        display: block;
+        overflow: hidden;
+
+        img {
+            margin-top: 0px;
+        }
+    }
+
+    .offers {
+        display: block;
+        overflow: hidden;
+
+    }
+
+    .perks {
+
+        width: 80%;
+
+        h1 {
+            font-size: 28px;
+        }
+
+    }
+
+    .grid-2 {
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 300px);
+        grid-template-rows: 345px 345px 345px;
+        row-gap: 50px;
+
+    }
+
+
+
+    .figures {
+        height: 40vh;
+        width: 90%;
+        /* border: 2px solid red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .customers {
+        height: auto;
+        width: fit-content;
+        text-align: center;
+
+        h1 {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    }
+
+    .transaction {
+        height: auto;
+        width: fit-content;
+        text-align: center;
+
+        h1 {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+    }
+
+
+    .payments {
+
+        height: auto;
+        width: fit-content;
+        text-align: center;
+
+        h1 {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    }
+
+    .partners {
+
+        height: auto;
+        width: 70%;
+
+        h1 {
+            font-size: 28px;
+        }
+
+    }
+
+    .grid-3 {
+
+        height: auto;
+        width: 85%;
+        display: grid;
+        grid-template-columns: repeat(2, 190px);
+        grid-template-rows: 130px 130px;
+        gap: 20px;
+
+    }
+
+    .upi {
+        position: relative;
+        left: 125px;
+        bottom: 10px;
+    }
+
+
+
+    /*============================ homepage-3 responsive from here ================================== */
+
+
+
+
+    .homepage-3 {
+        height: auto;
+        padding: 50px;
+        width: 100%;
+        overflow: hidden;
+
+        h1 {
+            font-size: 32px;
+        }
+    }
+
+    .grid-cards {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 50px 390px 50px;
+        grid-template-rows: 300px 300px;
+        justify-content: center;
+    }
+
+    .review-2 {
+        display: none;
+    }
+
+
+    .arrow-1 {
+        position: relative;
+        left: 30px;
+    }
+
+    .arrow-2 {
+        position: relative;
+        right: 30px;
+    }
+
+    .avatar {
+        height: 90px;
+        width: 90px;
+    }
+
+    .avatar-name {
+        /* border: 2px solid red; */
+        height: fit-content;
+        margin: 50px 20px;
+        font-size: 19px;
+    }
+
+    .money {
+        padding: 8px 20px;
+        font-size: 13px;
+
+        span {
+            font-size: 16px;
+        }
+    }
+
+    .text {
+        color: #182547;
+        margin: 10px;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+
+
+    .grid-4 {
+        display: grid;
+        grid-template-columns: repeat(2, 170px);
+        grid-template-rows: 280px;
+        position: relative;
+        right: 12px;
+        width: 100%;
+        height: auto;
+        gap: 15px;
+    }
+
+    .cashback-3 {
+
+        img {
+            margin-top: 60px;
+            vertical-align: middle;
+        }
+
+        h1 {
+            font-size: 20px;
+            padding-top: 30px;
+
+        }
+
+    }
+
+    .approval {
+
+        img {
+            margin-top: 60px;
+        }
+
+        h1 {
+            font-size: 20px;
+        }
+    }
+
+    .click {
+
+        position: relative;
+        left: 100px;
+
+        img {
+            margin-top: 60px;
+        }
+
+        h1 {
+            font-size: 20px;
+        }
+    }
+
+    /*============================ homepage-4 responsive from here ================================== */
+
+
+    .homepage-4 {
+
+        h1 {
+            font-size: 32px;
+        }
+
+
+        .caraousal-cards {
+
+            height: 70vh;
+            width: 100%;
+            /* border: 2px solid red; */
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            grid-template-columns: 150px 150px 150px 150px 150px;
+            grid-template-rows: 350px 350px 350px 350px 350px;
+            gap: 10px;
+            padding: 10px;
+
+
+        }
+
+        .card-1 button {
+
+
+            font-size: 16px;
+            font-weight: 500;
+            padding: 5px 20px;
+            border-radius: 10px;
+            border: 0;
+
+        }
+
+        .card-2 button {
+
+
+            font-size: 16px;
+            font-weight: 500;
+            padding: 5px 20px;
+            border-radius: 10px;
+            border: 0;
+
+        }
+
+        .card-3 button {
+
+
+            font-size: 16px;
+            font-weight: 500;
+            padding: 5px 10px;
+            border-radius: 10px;
+            border: 0;
+
+        }
+
+        .card-4 button {
+
+
+            font-size: 16px;
+            font-weight: 500;
+            padding: 5px 10px;
+            border-radius: 10px;
+            border: 0;
+
+        }
+
+        .card-5 button {
+
+
+            font-size: 16px;
+            font-weight: 500;
+            padding: 5px 10px;
+            border-radius: 10px;
+            border: 0;
+
+        }
+
+        .scroll-button {
+
+            button {
+
+                padding: 15px 4px;
+                font-size: 15px;
+
+            }
+
+        }
+
+        .scroll-button button:focus {
+
+            background-color: white;
+            color: black;
+        }
+
+        #digitalfinance_card {
+            margin-top: 30px;
+            height: 200px;
+            width: 300px;
+        }
+
+        .BW-logo-2 {
+            height: 100%;
+            width: 120%;
+        }
+
+
+        #applynow {
+            font-size: 16px;
+            padding: 15px 30px;
+        }
+
+        .questions {
+            /* border: 2px solid red; */
+            width: 100%;
+            padding: 20px;
+            font-size: 15px;
+            margin-top: 50px;
+
+            hr {
+                width: 98%;
+                border: 0.5px solid #F5F5F5;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+
+        }
+
+    }
+
+
+
+    /*============================ footer responsive from here ================================== */
+
+
+
+    .footer {
+        height: auto;
+        display: flex;
+    }
+
+    .footer-contents {
+        height: auto;
+        width: 95%;
+        padding: 20px;
+        /* border: 2px solid red; */
+        display: block;
+        gap: 0px;
+    }
+
+    .info {
+
+        /* border: 2px solid red; */
+        height: 100%;
+        width: 80%;
+
+        p {
+            font-size: 20px;
+            margin-left: 0px;
+        }
+
+        .apple-playstore {
+            justify-content: left;
+            margin-top: 0px;
+
+            img {
+                margin: 10px 20px;
+            }
+        }
+
+        .apple-playstore hr {
+            height: 25px;
+            border: 1px solid white;
+
+        }
+
+    }
+
+    #w-logo {
+        margin: 20px;
+    }
+
+    .certifications {
+
+        /* border: 2px solid red; */
+        height: 100%;
+        width: 80%;
+
+        h1 {
+            font-size: 25px;
+            color: white;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 25px;
+            color: white;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+        .top {
+            height: auto;
+            padding: 20px 0px;
+        }
+
+        .C-logos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .bottom {
+            height: auto;
+        }
+
+        .socials {
+            display: flex;
+            position: relative;
+            right: 0px;
+            /* justify-content: center; */
+            align-items: center;
+            gap: 8px;
+
+            img {
+                height: 45px;
+            }
+
+            hr {
+                height: 25px;
+            }
+        }
+
+    }
+
+    .contacts-us {
+
+        width: 80%;
+
+
+        h1 {
+            color: white;
+            font-size: 25px;
+            font-weight: 500;
+            padding: 20px 0px;
+            position: relative;
+            right: 0px;
+        }
+
+        .whatsapp {
+            position: relative;
+            left: 9px;
+            width: 98%;
+            margin: 0px 0px;
+
+        }
+
+        .location {
+            margin: 20px 0px;
+            position: relative;
+            left: 12px;
+
+        }
+
+        .address {
+            /* border: 2px solid red; */
+            color: white;
+            font-size: 16px;
+            line-height: 1.6rem;
+
+        }
+
+
+
+    }
+
+    .company {
+
+        /* border: 2px solid red; */
+        position: static;
+        width: 80%;
+
+        h1 {
+            font-size: 25px;
+            padding: 20px 0px;
+
+        }
+
+    }
+
+    .company-links {
+
+        display: grid;
+        grid-template-rows: repeat(5, 1fr);
+        gap: 20px;
+
+        a {
+
+            color: white;
+            font-size: 16px;
+            text-decoration: none;
+
+        }
+    }
+
+    #footer-line {
+        width: 90%;
+        border: 1px solid white;
+    }
+
+    #copyright {
+        font-size: 14px;
+        margin: 20px 0px 20px;
+
+    }
+
+
+}
+
+
+@media (min-width:319px) and (max-width:425px) {
+
+
+
+    .Background-mobile-vedio {
+
+        display: block;
+        position: absolute;
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+
+    }
+
+
+    .background-video {
+
+        display: none;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        object-fit: cover;
+        z-index: -2;
+    }
+
+    /* .Background-mobile-vedio{
+         display: none;
+         object-fit: cover;
+       
+    
+    } */
+
+
+    #menu {
+
+        display: block;
+    }
+
+    nav {
+        height: 7vh;
+        width: 100%;
+    }
+
+    .logo {
+        height: 100%;
+        width: 50%;
+    }
+
+    .header-links {
+        display: none;
+    }
+
+
+    /*============================ homepage  responsive from here ================================== */
+
+
+
+    .homepage-content {
+        width: 80%;
+
+
+        h1 {
+            font-size: 43px;
+        }
+
+        p {
+
+            font-size: 19px;
+            margin-top: 98px;
+        }
+
+        button {
+            padding: 15px 20px;
+            font-size: 18px;
+        }
+
+    }
+
+    .BW-logo {
+        height: 20%;
+        width: 100%;
+        gap: 10px;
+
+    }
+
+    .one {
+
+        height: 60%;
+        width: 20%;
+
+    }
+
+    .two {
+
+        height: 80%;
+        width: 40%;
+
+    }
+
+    .three {
+
+        height: 60%;
+        width: 20%;
+
+    }
+
+    .four {
+
+        height: 60%;
+        width: 20%;
+
+    }
+
+
+
+    /*============================ homepage-2 responsive from here ================================== */
+
+
+
+
+    .homepage-2 {
+        height: auto;
+    }
+
+    .heading {
+        h2 {
+            font-size: 28px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+
+    .kiwi-neon {
+
+        height: auto;
+        width: 90%;
+        /* border: 2px solid red; */
+        border-radius: 50px;
+        background-color: #A5FF08;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+
+    }
+
+    .navbar {
+        height: auto;
+        padding: 30px 30px;
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .nine-nine {
+        padding: 12px 14px;
+
+        button {
+            font-size: 16px;
+        }
+
+    }
+
+    .grids {
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 350px);
+        grid-template-rows: 280px 280px 280px;
+        row-gap: 60px;
+        padding: 30px 0px;
+
+
+    }
+
+    .cashback {
+
+        display: block;
+        overflow: hidden;
+
+        img {
+            margin-top: 0px;
+        }
+
+
+    }
+
+    .airport {
+
+        display: block;
+        overflow: hidden;
+
+        img {
+            margin-top: 0px;
+        }
+    }
+
+    .offers {
+        display: block;
+        overflow: hidden;
+
+    }
+
+    .perks {
+
+        width: 80%;
+
+        h1 {
+            font-size: 28px;
+        }
+
+    }
+
+    .grid-2 {
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 300px);
+        grid-template-rows: 345px 345px 345px;
+        row-gap: 50px;
+
+    }
+
+
+
+    .figures {
+        height: 40vh;
+        width: 90%;
+        /* border: 2px solid red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .customers {
+        height: auto;
+        width: fit-content;
+        text-align: center;
+
+        h1 {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    }
+
+    .transaction {
+        height: auto;
+        width: fit-content;
+        text-align: center;
+
+        h1 {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+    }
+
+
+    .payments {
+
+        height: auto;
+        width: fit-content;
+        text-align: center;
+
+        h1 {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    }
+
+    .partners {
+
+        height: auto;
+        width: 70%;
+
+        h1 {
+            font-size: 28px;
+        }
+
+    }
+
+    .grid-3 {
+
+        height: auto;
+        width: 85%;
+        display: grid;
+        grid-template-columns: repeat(2, 190px);
+        grid-template-rows: 130px 130px;
+        gap: 20px;
+
+    }
+
+    .upi {
+        position: relative;
+        left: 125px;
+        bottom: 10px;
+    }
+
+
+
+    /*============================ homepage-3 responsive from here ================================== */
+
+
+
+
+    .homepage-3 {
+        height: auto;
+        padding: 50px;
+        width: 100%;
+        overflow: hidden;
+
+        h1 {
+            font-size: 32px;
+        }
+    }
+
+    .grid-cards {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 50px 390px 50px;
+        grid-template-rows: 300px 300px;
+        justify-content: center;
+    }
+
+    .review-2 {
+        display: none;
+    }
+
+
+    .arrow-1 {
+        position: relative;
+        left: 30px;
+    }
+
+    .arrow-2 {
+        position: relative;
+        right: 30px;
+    }
+
+    .avatar {
+        height: 90px;
+        width: 90px;
+    }
+
+    .avatar-name {
+        /* border: 2px solid red; */
+        height: fit-content;
+        margin: 50px 20px;
+        font-size: 19px;
+    }
+
+    .money {
+        padding: 8px 20px;
+        font-size: 13px;
+
+        span {
+            font-size: 16px;
+        }
+    }
+
+    .text {
+        color: #182547;
+        margin: 10px;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+
+
+    .grid-4 {
+        display: grid;
+        grid-template-columns: repeat(2, 170px);
+        grid-template-rows: 280px;
+        position: relative;
+        right: 12px;
+        width: 100%;
+        height: auto;
+        gap: 15px;
+    }
+
+    .cashback-3 {
+
+        img {
+            margin-top: 60px;
+            vertical-align: middle;
+        }
+
+        h1 {
+            font-size: 20px;
+            padding-top: 30px;
+
+        }
+
+    }
+
+    .approval {
+
+        img {
+            margin-top: 60px;
+        }
+
+        h1 {
+            font-size: 20px;
+        }
+    }
+
+    .click {
+
+        position: relative;
+        left: 100px;
+
+        img {
+            margin-top: 60px;
+        }
+
+        h1 {
+            font-size: 20px;
+        }
+    }
+
+    /*============================ homepage-4 responsive from here ================================== */
+
+
+    .homepage-4 {
+
+        h1 {
+            font-size: 32px;
+        }
+
+
+        .caraousal-cards {
+
+            height: 70vh;
+            width: 100%;
+            /* border: 2px solid red; */
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            grid-template-columns: 150px 150px 150px 150px 150px;
+            grid-template-rows: 350px 350px 350px 350px 350px;
+            gap: 10px;
+            padding: 10px;
+
+
+        }
+
+        .card-1 button {
+
+
+            font-size: 16px;
+            font-weight: 500;
+            padding: 5px 20px;
+            border-radius: 10px;
+            border: 0;
+
+        }
+
+        .card-2 button {
+
+
+            font-size: 16px;
+            font-weight: 500;
+            padding: 5px 20px;
+            border-radius: 10px;
+            border: 0;
+
+        }
+
+        .card-3 button {
+
+
+            font-size: 16px;
+            font-weight: 500;
+            padding: 5px 10px;
+            border-radius: 10px;
+            border: 0;
+
+        }
+
+        .card-4 button {
+
+
+            font-size: 16px;
+            font-weight: 500;
+            padding: 5px 10px;
+            border-radius: 10px;
+            border: 0;
+
+        }
+
+        .card-5 button {
+
+
+            font-size: 16px;
+            font-weight: 500;
+            padding: 5px 10px;
+            border-radius: 10px;
+            border: 0;
+
+        }
+
+        .scroll-button {
+
+            button {
+
+                padding: 15px 4px;
+                font-size: 15px;
+
+            }
+
+        }
+
+        .scroll-button button:focus {
+
+            background-color: white;
+            color: black;
+        }
+
+        #digitalfinance_card {
+            margin-top: 30px;
+            height: 200px;
+            width: 300px;
+        }
+
+        .BW-logo-2 {
+            height: 100%;
+            width: 120%;
+        }
+
+
+        #applynow {
+            font-size: 16px;
+            padding: 15px 30px;
+        }
+
+        .questions {
+            /* border: 2px solid red; */
+            width: 100%;
+            padding: 20px;
+            font-size: 15px;
+            margin-top: 50px;
+
+            hr {
+                width: 98%;
+                border: 0.5px solid #F5F5F5;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+
+        }
+
+    }
+
+
+
+    /*============================ footer responsive from here ================================== */
+
+
+
+    .footer {
+        height: auto;
+        display: flex;
+    }
+
+    .footer-contents {
+        height: auto;
+        width: 95%;
+        padding: 20px;
+        /* border: 2px solid red; */
+        display: block;
+        gap: 0px;
+    }
+
+    .info {
+
+        /* border: 2px solid red; */
+        height: 100%;
+        width: 80%;
+
+        p {
+            font-size: 20px;
+            margin-left: 0px;
+        }
+
+        .apple-playstore {
+            justify-content: left;
+            margin-top: 0px;
+
+            img {
+                margin: 10px 20px;
+            }
+        }
+
+        .apple-playstore hr {
+            height: 25px;
+            border: 1px solid white;
+
+        }
+
+    }
+
+    #w-logo {
+        margin: 20px;
+    }
+
+    .certifications {
+
+        /* border: 2px solid red; */
+        height: 100%;
+        width: 80%;
+
+        h1 {
+            font-size: 25px;
+            color: white;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 25px;
+            color: white;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+        .top {
+            height: auto;
+            padding: 20px 0px;
+        }
+
+        .C-logos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .bottom {
+            height: auto;
+        }
+
+        .socials {
+            display: flex;
+            position: relative;
+            right: 0px;
+            /* justify-content: center; */
+            align-items: center;
+            gap: 8px;
+
+            img {
+                height: 45px;
+            }
+
+            hr {
+                height: 25px;
+            }
+        }
+
+    }
+
+    .contacts-us {
+
+        width: 80%;
+
+
+        h1 {
+            color: white;
+            font-size: 25px;
+            font-weight: 500;
+            padding: 20px 0px;
+            position: relative;
+            right: 0px;
+        }
+
+        .whatsapp {
+            position: relative;
+            left: 9px;
+            width: 98%;
+            margin: 0px 0px;
+
+        }
+
+        .location {
+            margin: 20px 0px;
+            position: relative;
+            left: 12px;
+
+        }
+
+        .address {
+            /* border: 2px solid red; */
+            color: white;
+            font-size: 16px;
+            line-height: 1.6rem;
+
+        }
+
+
+
+    }
+
+    .company {
+
+        /* border: 2px solid red; */
+        position: static;
+        width: 80%;
+
+        h1 {
+            font-size: 25px;
+            padding: 20px 0px;
+
+        }
+
+    }
+
+    .company-links {
+
+        display: grid;
+        grid-template-rows: repeat(5, 1fr);
+        gap: 20px;
+
+        a {
+
+            color: white;
+            font-size: 16px;
+            text-decoration: none;
+
+        }
+    }
+
+    #footer-line {
+        width: 90%;
+        border: 1px solid white;
+    }
+
+    #copyright {
+        font-size: 14px;
+        margin: 20px 0px 20px;
+
+    }
 
 
 
