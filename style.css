@@ -13,7 +13,7 @@ header {
 
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: auto;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -106,7 +106,7 @@ nav {
 
 .homepage {
 
-    height: 93vh;
+    height: 93dvh;
     width: 100%;
     display: flex;
     justify-content: start;
@@ -205,7 +205,7 @@ nav {
 
 .homepage-2 {
 
-    height: 270dvh;
+    height: auto;
     width: 100%;
     background-color: #F1FFC5;
     display: flex;
@@ -569,7 +569,8 @@ nav {
 }
 
 .homepage-3 {
-    height: 150vh;
+    height: auto;
+    padding: 70px 0px;
     width: 100%;
     background-color: #F4FFEB;
     display: flex;
@@ -589,7 +590,7 @@ nav {
 }
 
 .grid-cards {
-    height: 50vh;
+    height: auto;
     width: 90%;
     /* border: 2px solid red; */
     display: grid;
@@ -744,7 +745,7 @@ nav {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: 75%;
-    height: 47vh;
+    height: 38vh;
     gap: 30px;
 }
 
@@ -820,7 +821,7 @@ nav {
 }
 
 .homepage-4 {
-    min-height: 250vh;
+    min-height: auto;
     width: 100%;
     padding: 50px;
     display: flex;
@@ -842,16 +843,17 @@ nav {
 
 .caraousal-cards {
 
-    height: 70vh;
+    height: auto;
     width: 100%;
     /* border: 2px solid red; */
     display: grid;
     justify-content: center;
     align-items: center;
     grid-template-columns: 300px 300px 300px 300px 300px;
-    grid-template-rows: 400px 400px 400px 400px 400px;
+    grid-template-rows: 400px;
     gap: 10px;
     padding: 10px;
+    margin-bottom: 80px;
 
 
 }
@@ -1236,7 +1238,8 @@ nav {
 }
 
 .footer {
-    height: 85vh;
+    height: auto;
+    padding: 50px 0px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -1308,7 +1311,7 @@ nav {
         font-size: 25px;
         color: white;
         font-weight: 400;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
 
     .top {
@@ -1573,10 +1576,12 @@ nav {
     /* ======================================== footer responsive from here =================================== */
 
 
-
+    .footer {
+        height: auto;
+    }
 
     .footer-contents {
-        height: 75%;
+        height: auto;
         width: 100%;
         padding: 30px;
         gap: 30px;
@@ -1955,7 +1960,7 @@ nav {
     }
 
     .footer-contents {
-        height: 75%;
+        height: auto;
         width: 95%;
         gap: 30px;
     }
@@ -1996,6 +2001,10 @@ nav {
         }
 
 
+        .bottom{
+             margin-top: 30px;
+        }
+
         .C-logos {
             width: 100%;
             display: flex;
@@ -2032,7 +2041,7 @@ nav {
 
         .address {
             font-size: 12px;
-            line-height: 1.3rem;
+            line-height: 1.2rem;
 
         }
 
@@ -2051,10 +2060,11 @@ nav {
     }
 
     .company-links {
-        margin-top: 20px;
+        margin-top: 5px;
         grid-template-columns: 140px;
         grid-template-rows: repeat(5, 20px);
-        gap: 25px;
+        gap: 5px;
+        width: 105%;
 
         a {
             font-size: 11px;
@@ -2066,6 +2076,7 @@ nav {
     #footer-line {
         width: 80%;
         border: 1px solid white;
+        margin-top: 30px;
     }
 
     #copyright {
@@ -2305,7 +2316,8 @@ nav {
 
     .figures {
         height: 40vh;
-        width: 90%;
+        width: 85%;
+        gap: 25px;
         /* border: 2px solid red; */
         display: flex;
         justify-content: center;
@@ -2407,7 +2419,7 @@ nav {
         width: 90%;
         display: grid;
         grid-template-columns: 50px 390px 50px;
-        grid-template-rows: 300px 300px;
+        grid-template-rows: 300px;
         justify-content: center;
     }
 
@@ -2460,8 +2472,7 @@ nav {
         display: grid;
         grid-template-columns: repeat(2, 170px);
         grid-template-rows: 280px;
-        position: relative;
-        right: 12px;
+        justify-content: center;
         width: 100%;
         height: auto;
         gap: 15px;
@@ -2657,6 +2668,7 @@ nav {
         height: auto;
         width: 95%;
         padding: 20px;
+        padding-left: 50px;
         /* border: 2px solid red; */
         display: block;
         gap: 0px;
@@ -2665,11 +2677,12 @@ nav {
     .info {
 
         /* border: 2px solid red; */
-        height: 100%;
+        height: auto;
         width: 80%;
+        padding: 0px;
 
         p {
-            font-size: 20px;
+            font-size: 15px;
             margin-left: 0px;
         }
 
@@ -2678,7 +2691,7 @@ nav {
             margin-top: 0px;
 
             img {
-                margin: 10px 20px;
+                margin: 10px 10px 10px 10px;
             }
         }
 
@@ -2691,54 +2704,63 @@ nav {
     }
 
     #w-logo {
-        margin: 20px;
+        margin: 20px 0px;
     }
 
     .certifications {
 
         /* border: 2px solid red; */
         height: 100%;
-        width: 80%;
+        width: 100%;
 
         h1 {
-            font-size: 25px;
+            font-size: 16px;
             color: white;
             font-weight: 500;
             margin-bottom: 20px;
         }
 
         h2 {
-            font-size: 25px;
+            font-size: 16px;
             color: white;
             font-weight: 400;
-            margin-bottom: 20px;
+            margin-bottom: 5px;
         }
 
         .top {
             height: auto;
-            padding: 20px 0px;
+            width: 100%;
+            padding: 10px 0px;
         }
 
         .C-logos {
             display: flex;
             flex-wrap: wrap;
-            gap: 15px;
+            gap: 8px;
+
+            img {
+                height: 30px;
+                width: 60px;
+            }
         }
 
         .bottom {
             height: auto;
+            padding: 10px 0px;
+           
         }
 
         .socials {
             display: flex;
-            position: relative;
+            position: static;
             right: 0px;
             /* justify-content: center; */
             align-items: center;
-            gap: 8px;
+            gap: 0px;
 
             img {
                 height: 45px;
+                width: 30px;
             }
 
             hr {
@@ -2755,11 +2777,16 @@ nav {
 
         h1 {
             color: white;
-            font-size: 25px;
+            font-size: 16px;
             font-weight: 500;
-            padding: 20px 0px;
+            padding: 10px 0px;
             position: relative;
             right: 0px;
+        }
+
+        .icon {
+            position: relative;
+            right: 10px;
         }
 
         .whatsapp {
@@ -2780,8 +2807,8 @@ nav {
         .address {
             /* border: 2px solid red; */
             color: white;
-            font-size: 16px;
-            line-height: 1.6rem;
+            font-size: 13px;
+            line-height: 1.4rem;
 
         }
 
@@ -2793,11 +2820,11 @@ nav {
 
         /* border: 2px solid red; */
         position: static;
-        width: 80%;
+        width: 100%;
 
         h1 {
-            font-size: 25px;
-            padding: 20px 0px;
+            font-size: 16px;
+            padding: 10px 0px;
 
         }
 
@@ -2807,28 +2834,27 @@ nav {
 
         display: grid;
         grid-template-rows: repeat(5, 1fr);
-        gap: 20px;
+        gap: 0px;
 
         a {
 
             color: white;
-            font-size: 16px;
+            font-size: 13px;
             text-decoration: none;
-
+            padding: 5px;
         }
     }
 
     #footer-line {
         width: 90%;
-        border: 1px solid white;
+        border: 0.5px solid white;
     }
 
     #copyright {
-        font-size: 14px;
+        font-size: 10px;
         margin: 20px 0px 20px;
 
     }
-
 
 }
 
@@ -3163,7 +3189,7 @@ nav {
 
     .figures {
         height: auto;
-        width: 90%;
+        width: 70%;
         /* border: 2px solid red; */
         display: flex;
         flex-wrap: wrap;
@@ -3264,10 +3290,11 @@ nav {
     }
 
     .grid-cards {
+        height: auto;
         width: 90%;
         display: grid;
         grid-template-columns: 50px 275px 50px;
-        grid-template-rows: 300px 300px;
+        grid-template-rows: 300px;
         justify-content: center;
     }
 
@@ -3327,8 +3354,7 @@ nav {
         display: grid;
         grid-template-columns: repeat(1, 250px);
         grid-template-rows: 150px 150px 150px;
-        position: relative;
-        right: 11px;
+        justify-content: center;
         width: 100%;
         height: auto;
         gap: 15px;
@@ -3343,7 +3369,7 @@ nav {
         align-items: center;
 
         img {
-           height: 50px;
+            height: 50px;
             margin-top: 0px;
             width: 45px;
             vertical-align: middle;
@@ -3391,7 +3417,7 @@ nav {
         position: static;
 
         img {
-          height: 50px;
+            height: 50px;
             margin-top: 0px;
             width: 45px;
             vertical-align: middle;
@@ -3425,29 +3451,34 @@ nav {
             justify-content: center;
             align-items: center;
             grid-template-columns: 150px 150px 150px 150px 150px;
-            grid-template-rows: 350px 350px 350px 350px 350px;
+            grid-template-rows: 350px ;
             gap: 10px;
             padding: 10px;
+            margin-bottom: 0px;
 
 
         }
 
 
-.card-1{
-    height: 350px;
-}
-.card-2{
-    height: 350px;
-}
-.card-3{
-    height: 350px;
-}
-.card-4{
-    height: 350px;
-}
-.card-5{
-    height: 350px;
-}
+        .card-1 {
+            height: 350px;
+        }
+
+        .card-2 {
+            height: 350px;
+        }
+
+        .card-3 {
+            height: 350px;
+        }
+
+        .card-4 {
+            height: 350px;
+        }
+
+        .card-5 {
+            height: 350px;
+        }
 
 
 
@@ -3578,17 +3609,17 @@ nav {
         /* border: 2px solid red; */
         display: block;
         gap: 0px;
-        font-size: 15px;
     }
 
     .info {
 
         /* border: 2px solid red; */
-        height: 100%;
+        height: auto;
         width: 80%;
+        padding: 0px;
 
         p {
-            font-size: 20px;
+            font-size: 15px;
             margin-left: 0px;
         }
 
@@ -3597,7 +3628,7 @@ nav {
             margin-top: 0px;
 
             img {
-                margin: 10px 20px;
+                margin: 10px 10px 10px 10px;
             }
         }
 
@@ -3610,54 +3641,62 @@ nav {
     }
 
     #w-logo {
-        margin: 20px;
+        margin: 20px 0px;
     }
 
     .certifications {
 
         /* border: 2px solid red; */
         height: 100%;
-        width: 80%;
+        width: 100%;
 
         h1 {
-            font-size: 25px;
+            font-size: 16px;
             color: white;
             font-weight: 500;
             margin-bottom: 20px;
         }
 
         h2 {
-            font-size: 25px;
+            font-size: 16px;
             color: white;
             font-weight: 400;
-            margin-bottom: 20px;
+            margin-bottom: 5px;
         }
 
         .top {
             height: auto;
-            padding: 20px 0px;
+            width: 100%;
+            padding: 10px 0px;
         }
 
         .C-logos {
             display: flex;
             flex-wrap: wrap;
-            gap: 15px;
+            gap: 8px;
+
+            img {
+                height: 30px;
+                width: 60px;
+            }
         }
 
         .bottom {
             height: auto;
+            padding: 10px 0px;
         }
 
         .socials {
             display: flex;
-            position: relative;
+            position: static;
             right: 0px;
             /* justify-content: center; */
             align-items: center;
-            gap: 8px;
+            gap: 0px;
 
             img {
                 height: 45px;
+                width: 30px;
             }
 
             hr {
@@ -3674,11 +3713,16 @@ nav {
 
         h1 {
             color: white;
-            font-size: 25px;
+            font-size: 16px;
             font-weight: 500;
-            padding: 20px 0px;
+            padding: 10px 0px;
             position: relative;
             right: 0px;
+        }
+
+        .icon {
+            position: relative;
+            right: 10px;
         }
 
         .whatsapp {
@@ -3699,8 +3743,8 @@ nav {
         .address {
             /* border: 2px solid red; */
             color: white;
-            font-size: 16px;
-            line-height: 1.6rem;
+            font-size: 13px;
+            line-height: 1.4rem;
 
         }
 
@@ -3712,11 +3756,11 @@ nav {
 
         /* border: 2px solid red; */
         position: static;
-        width: 80%;
+        width: 100%;
 
         h1 {
-            font-size: 25px;
-            padding: 20px 0px;
+            font-size: 16px;
+            padding: 10px 0px;
 
         }
 
@@ -3726,24 +3770,24 @@ nav {
 
         display: grid;
         grid-template-rows: repeat(5, 1fr);
-        gap: 20px;
+        gap: 0px;
 
         a {
 
             color: white;
-            font-size: 16px;
+            font-size: 13px;
             text-decoration: none;
-
+            padding: 5px;
         }
     }
 
     #footer-line {
         width: 90%;
-        border: 1px solid white;
+        border: 0.5px solid white;
     }
 
     #copyright {
-        font-size: 14px;
+        font-size: 10px;
         margin: 20px 0px 20px;
 
     }
